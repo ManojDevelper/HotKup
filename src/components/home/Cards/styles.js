@@ -70,6 +70,9 @@ export const CardsMain = styled.div`
 
     .card:nth-child(2n) {
       flex-direction: row-reverse;
+      img {
+        max-width: 30vw;
+      }
       .card_text {
         margin: 0 8.9vw 0 0;
       }

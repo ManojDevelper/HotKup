@@ -1,5 +1,5 @@
 import React from "react"
-import p2_dashboard_img from "../../../data/assets/banner/p2_dashboard_img.png"
+import p2_dashboard_img from "../../../data/assets/banner/dashboard.svg"
 import { ProductMain } from "./styles"
 
 const Product = () => {
