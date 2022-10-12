@@ -4,7 +4,7 @@ import { ProductMain } from "./styles"
 
 const Product = () => {
   return (
-    <ProductMain>
+    <ProductMain id="pricing">
       <h1>One solution to replace them all</h1>
       <img src={p2_dashboard_img} alt="ProductMain" className="dashboard_img" />
       <p>

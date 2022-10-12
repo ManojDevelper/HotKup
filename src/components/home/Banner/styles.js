@@ -19,45 +19,47 @@ export const BannerMain = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
     z-index: 1;
     h2 {
       display: flex;
       position: relative;
-      width: 1000px;
+      width: 65vw;
       font-weight: 900;
-      font-size: 71.8845px;
-      line-height: 88px;
+      font-size: 4.6vw;
+      line-height: 5.7vw;
       text-align: center;
       color: #212121;
       .crone {
         position: absolute;
-        width: 39px;
-        height: 47px;
+        width: 2.5vw;
+        height: 3vw;
         top: -1.5vw;
         left: 1.2vw;
       }
       .roundoff {
         position: absolute;
-        width: 375px;
+        width: 24.5vw;
         right: 2vw;
         top: 4.9vw;
       }
     }
     p {
-      width: 760px;
+      width: 49.6vw;
       font-weight: 500;
-      font-size: 22px;
-      line-height: 36px;
+      font-size: 1.4vw;
+      line-height: 2.3vw;
       text-align: center;
       color: #212121;
-      margin: 20px 0;
+      margin: 1.3vw 0 2vw 0;
       display: inline-block;
       position: relative;
+      span {
+        font-weight: bold;
+      }
       .cup {
         position: absolute;
-        width: 35px;
-        right: 1vw;
+        width: 2.2vw;
+        right: 1.5vw;
       }
       ::after {
         content: ".";
@@ -66,13 +68,13 @@ export const BannerMain = styled.div`
       }
     }
     button {
-      width: 400px;
-      height: 76px;
-      left: 520px;
-      top: 559px;
+      width: 26.1vw;
+      height: 4.9vw;
+      left: 33.9vw;
+      top: 36.5vw;
       background: #0057fb;
       font-weight: 600;
-      font-size: 24px;
+      font-size: 1.5vw;
       color: #ffffff;
       border: none;
       outline: none;
@@ -83,23 +85,77 @@ export const BannerMain = styled.div`
       position: relative;
       align-items: center;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 1vw;
       color: #212121;
-      margin-top: 20px;
+      margin-top: 1.2vw;
       cursor: pointer;
       transiton: 0.5s ease-in-out;
       .play_icon {
-        width: 35px;
+        width: 2.2vw;
         margin-right: 0.5vw;
       }
       .underLine {
         position: absolute;
-        width: 140px;
+        width: 9.1vw;
         bottom: -1vw;
         left: 2vw;
       }
       :hover {
         gap: 0.2vw;
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    height: 78.75vw;
+    .banner_rotate {
+      display: none;
+    }
+    .banner_text {
+      h2 {
+        width: 71.8vw;
+        font-size: 5vw;
+        line-height: 7.2vw;
+        .crone {
+          width: 4vw;
+          height: 4vw;
+          top: -1.3vw;
+          left: 1vw;
+        }
+        .roundoff {
+          width: 26.5vw;
+          right: 3vw;
+          top: 6.9vw;
+        }
+      }
+      p {
+        width: 78.1vw;
+        font-size: 2.8vw;
+        line-height: 3.5vw;
+        margin: 4.3vw 0 6vw 0;
+        .cup {
+          width: 4vw;
+          right: 4vw;
+        }
+        ::after {
+          right: 2vw;
+        }
+      }
+      button {
+        width: 46.4vw;
+        height: 8.75vw;
+        font-size: 3.3vw;
+      }
+      .watch_btn {
+        font-size: 2.9vw;
+        margin-top: 4.2vw;
+        .play_icon {
+          width: 5vw;
+          margin-right: 1vw;
+        }
+        .underLine {
+          display: none;
+        }
       }
     }
   }

@@ -1,30 +1,29 @@
 import styled from "styled-components"
-import highlate_text from "../../../data/assets/banner/highlate_text.png"
 
 export const ReviewMain = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 140px 0;
+  padding: 9.1vw 0;
   background: #f1f9ff;
   .review_title {
     h1 {
       font-weight: 900;
-      line-height: 81px;
+      line-height: 5.2vw;
       color: #212121;
       text-align: center;
       img {
-        width: 55px;
+        width: 3.5vw;
         margin: 0 0.7vw 0 0;
       }
     }
 
     p {
-      width: 880px;
+      width: 57.5vw;
       font-weight: 500;
-      font-size: 28px;
-      line-height: 40px;
+      font-size: 1.8vw;
+      line-height: 2.6vw;
       text-align: center;
       color: #212121;
     }
@@ -35,13 +34,13 @@ export const ReviewMain = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 1200px;
-      margin-top: 111px;
+      width: 78.4vw;
+      margin-top: 7.2vw;
       flex-direction: column;
       p {
         font-weight: 600;
-        font-size: 27.2892px;
-        line-height: 49px;
+        font-size: 1.7vw;
+        line-height: 3.2vw;
         text-align: center;
         color: #121212;
         opacity: 0.9;
@@ -53,19 +52,64 @@ export const ReviewMain = styled.div`
       .customer {
         display: flex;
         align-items: center;
-        margin: 1.5rem 0 0 0;
+        margin: 1.5vw 0 0 0;
         img {
           width: 3.3vw;
           border-radius: 3.3vw;
         }
         span {
           font-weight: 600;
-          font-size: 22.1px;
-          line-height: 21px;
-          letter-spacing: -0.3px;
+          font-size: 1.4vw;
+          line-height: 1.3vw;
+          letter-spacing: -0.01vw;
           text-decoration-line: underline;
           color: #000000;
           margin-left: 1vw;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    padding: 13vw 0;
+    .review_title {
+      h1 {
+        font-weight: 900;
+        font-size: 5vw;
+        line-height: 5.2vw;
+        color: #212121;
+        text-align: center;
+        img {
+          width: 6vw;
+          margin: 0 2vw 0 0;
+        }
+      }
+      p {
+        width: 78.9vw;
+        font-size: 3.3vw;
+        line-height: 4.5vw;
+        margin-top: 5vw;
+      }
+    }
+
+    .review_cards_main {
+      .review_card {
+        margin-top: 10.4vw;
+        p {
+          font-size: 2.9vw;
+          line-height: 5.4vw;
+          width: 76.4vw;
+        }
+        .customer {
+          margin: 4vw 0 0 0;
+          span {
+            font-size: 2.9vw;
+            margin-left: 3vw;
+          }
+          img {
+            width: 8vw;
+            border-radius: 3.3vw;
+          }
         }
       }
     }

@@ -4,7 +4,6 @@ import p4_c1 from "../../../data/assets/banner/p4_c1.png"
 import p4_c2 from "../../../data/assets/banner/p4_c2.png"
 import p4_c3 from "../../../data/assets/banner/p4_c3.png"
 import p4_c4 from "../../../data/assets/banner/p4_c4.png"
-import highlate_text from "../../../data/assets/banner/highlate_text.png"
 import { ReviewMain } from "./styles"
 
 const Review = () => {

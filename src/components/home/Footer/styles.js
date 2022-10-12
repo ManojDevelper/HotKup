@@ -5,11 +5,11 @@ export const FooterMain = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 280px;
+  padding: 6.5vw 19vw;
   p {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 1.5vw;
+    line-height: 2.4vw;
     text-align: center;
     color: #212121;
   }
@@ -20,8 +20,8 @@ export const FooterMain = styled.div`
     align-items: center;
     h1 {
       font-weight: 900;
-      font-size: 46px;
-      line-height: 72px;
+      font-size: 3vw;
+      line-height: 4.7vw;
       text-align: center;
       color: #200e32;
       span {
@@ -30,10 +30,10 @@ export const FooterMain = styled.div`
     }
     button {
       width: 400px;
-      height: 76px;
+      height: 4.9vw;
       background: #0057fb;
       font-weight: 600;
-      font-size: 24px;
+      font-size: 1.5vw;
       color: #ffffff;
       border: none;
       outline: none;
@@ -42,8 +42,8 @@ export const FooterMain = styled.div`
     }
   }
   .footer_curl {
-    width: 195px;
-    margin: 100px 0;
+    width: 12.7vw;
+    margin: 6.5vw 0;
   }
   .footer_container2 {
     display: flex;
@@ -51,7 +51,7 @@ export const FooterMain = styled.div`
     justify-content: center;
     align-items: center;
     .logo {
-      max-width: 198px;
+      max-width: 12.9vw;
       margin-bottom: 0.5vw;
     }
   }
@@ -61,38 +61,92 @@ export const FooterMain = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 770px;
-    gap: 22px;
-    margin: 56px;
+    max-width: 50vw;
+    gap: 1.4vw;
+    margin: 3.6vw;
     .avaiablites_list {
       font-weight: 500;
-      font-size: 20px;
-      line-height: 24px;
+      font-size: 1.3vw;
+      line-height: 1.5vw;
       text-align: center;
       color: #212121;
       opacity: 0.9;
       background: #dceffd;
-      border-radius: 20px;
-      border-radius: 50px;
-      padding: 8px 24px;
+      border-radius: 1.3vw;
+      border-radius: 3.2vw;
+      padding: 0.5vw 1.5vw;
     }
   }
   .icons {
     display: flex;
     a {
       cursor: pointer;
-      margin-left: 30px;
+      margin-left: 1.9vw;
       img {
-        width: 30px;
+        width: 1.9vw;
         transition: 0.1s ease-in-out;
         :hover {
-          width: 33px;
+          width: 2vw;
         }
       }
     }
   }
   .copy_right {
-    margin-top: 30px;
-    line-height: 45px;
+    margin-top: 1.9vw;
+    line-height: 2.9vw;
+  }
+
+  @media (max-width: 750px) {
+    padding: 13vw 0;
+    p {
+      font-size: 2.9vw;
+      line-height: 2.4vw;
+    }
+    .footer_main {
+      h1 {
+        font-size: 5vw;
+        line-height: 6vw;
+        width: 76.4vw;
+      }
+      button {
+        width: 46.4vw;
+        height: 8.7vw;
+        font-size: 3.3vw;
+        margin-top: 8.3vw;
+      }
+    }
+    .footer_curl {
+      width: 34vw;
+      margin: 19vw 0;
+    }
+    .footer_container2 {
+      .logo {
+        max-width: 34vw;
+        margin-bottom: 3vw;
+      }
+    }
+    .avaiablites_main {
+      max-width: 65vw;
+      gap: 1.4vw;
+      margin: 8vw;
+      .avaiablites_list {
+        font-size: 2.9vw;
+        border-radius: 5vw;
+        padding: 3vw 4vw;
+      }
+    }
+    .icons {
+      a {
+        img {
+          width: 5vw;
+          margin: 0 0 0 4vw;
+        }
+      }
+    }
+    .copy_right {
+      margin-top: 6vw;
+      line-height: 7vw;
+      width: 72vw;
+    }
   }
 `

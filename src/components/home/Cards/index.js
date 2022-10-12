@@ -9,7 +9,7 @@ import { CardsMain } from "./styles"
 
 const Cards = () => {
   return (
-    <CardsMain>
+    <CardsMain id="tour">
       <div className="banner_rotate"></div>
       <div className="cards_title">
         <h1>What’s inside HotKup?</h1>

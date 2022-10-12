@@ -6,25 +6,40 @@ export const ProductMain = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 140px 0;
+  padding: 9vw 0;
   h1 {
     font-weight: 900;
-    font-size: 48px;
-    line-height: 81px;
+    font-size: 3vw;
+    line-height: 5vw;
     color: #212121;
     text-align: center;
   }
   .dashboard_img {
-    width: 1000px;
-    margin: 31px 0 100px 0;
+    width: 65vw;
+    margin: 2vw 0 6.5vw 0;
   }
   p {
-    width: 850px;
+    width: 55.5vw;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 1.5vw;
+    line-height: 2.6vw;
     text-align: center;
     letter-spacing: 0.01em;
     color: #200e32;
+  }
+  @media (max-width: 750px) {
+    h1 {
+      font-size: 4.5vw;
+      line-height: 5.6vw;
+    }
+    .dashboard_img {
+      width: 69.7vw;
+      margin: 7vw 0 6vw 0;
+    }
+    p {
+      width: 72.5vw;
+      font-size: 2.9vw;
+      line-height: 5vw;
+    }
   }
 `

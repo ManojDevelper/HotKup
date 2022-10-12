@@ -5,7 +5,7 @@ export const CardsMain = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 140px;
+  padding: 9.1vw;
   position: relative;
   .banner_rotate {
     position: absolute;
@@ -20,16 +20,16 @@ export const CardsMain = styled.div`
     z-index: 1;
     h1 {
       font-weight: 900;
-      line-height: 81px;
+      line-height: 5.1vw;
       color: #212121;
       text-align: center;
     }
 
     p {
-      width: 910px;
+      width: 59.1vw;
       font-weight: 500;
-      font-size: 22px;
-      line-height: 36px;
+      font-size: 1.4vw;
+      line-height: 2.3vw;
       text-align: center;
       color: #212121;
     }
@@ -40,30 +40,30 @@ export const CardsMain = styled.div`
     .card {
       display: flex;
       align-items: center;
-      margin-top: 100px;
+      margin-top: 6.5vw;
       img {
-        max-width: 580px;
+        max-width: 37.9vw;
       }
       .card_text {
         height: fit-content;
-        margin-left: 137px;
+        margin-left: 8.9vw;
         h2 {
           display: flex;
           flex-direction: column;
           font-weight: 900;
-          font-size: 40px;
-          line-height: 50px;
+          font-size: 2.6vw;
+          line-height: 3.2vw;
           color: #212121;
           img {
-            width: 260px;
+            width: 16.9vw;
           }
         }
         p {
           font-weight: 500;
-          font-size: 25px;
-          line-height: 42px;
+          font-size: 1.6vw;
+          line-height: 2.7vw;
           color: #212121;
-          margin-top: 20px;
+          margin-top: 1.3vw;
         }
       }
     }
@@ -71,7 +71,63 @@ export const CardsMain = styled.div`
     .card:nth-child(2n) {
       flex-direction: row-reverse;
       .card_text {
-        margin: 0 137px 0 0;
+        margin: 0 8.9vw 0 0;
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    padding: 15vw 0;
+    .banner_rotate {
+      display: none;
+    }
+    .cards_title {
+      h1 {
+        font-size: 4.5vw;
+        line-height: 5.6vw;
+      }
+      p {
+        width: 70.8vw;
+        font-size: 2.9vw;
+        line-height: 4.5vw;
+        margin: 6.6vw 0 0 0;
+      }
+    }
+
+    .card_container {
+      .card {
+        margin-top: 15vw;
+        flex-direction: column-reverse;
+        .card_text {
+          margin: 0;
+          h2 {
+            font-size: 4.1vw;
+            line-height: 5vw;
+            text-align: center;
+            width: fit-content;
+            margin: auto;
+            img {
+              width: 27.2vw;
+              margin: 0;
+            }
+          }
+          p {
+            font-size: 2.9vw;
+            line-height: 4.5vw;
+            margin: 5vw 0 10vw 0;
+            text-align: center;
+            width: 75.2vw;
+          }
+        }
+        img {
+          max-width: 57vw;
+        }
+
+        :nth-child(2n) {
+          flex-direction: column-reverse;
+          .card_text {
+            margin: 0;
+          }
+        }
       }
     }
   }

@@ -18,8 +18,9 @@ const Banner = () => {
         </h2>
         <p>
           Collaborate from anywhere with bundled tasks, team messaging, and
-          project management on one unified platform. Discover why HotKup will
-          be as vital to your team as that first hot cup of morning coffee
+          project management on <span>one unified platform</span>. Discover why
+          HotKup will be as vital to your team as that first{" "}
+          <span>hot cup</span> of morning coffee
           <img src={p1_cup} alt="p1_cup" className="cup" />
         </p>
         <button>Join Today - It’s Free</button>
