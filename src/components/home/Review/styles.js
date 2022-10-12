@@ -75,7 +75,7 @@ export const ReviewMain = styled.div`
     .review_title {
       h1 {
         font-weight: 900;
-        font-size: 5vw;
+        font-size: 5.8vw;
         line-height: 5.2vw;
         color: #212121;
         text-align: center;
@@ -86,19 +86,19 @@ export const ReviewMain = styled.div`
       }
       p {
         width: 78.9vw;
-        font-size: 3.3vw;
+        font-size: 3.5vw;
         line-height: 4.5vw;
-        margin-top: 5vw;
+        margin: 5vw auto 0 auto;
       }
     }
 
     .review_cards_main {
       .review_card {
-        margin-top: 10.4vw;
+        margin-top: 14.4vw;
         p {
-          font-size: 2.9vw;
-          line-height: 5.4vw;
-          width: 76.4vw;
+          font-size: 3.5vw;
+          line-height: 6vw;
+          width: 87vw;
         }
         .customer {
           margin: 4vw 0 0 0;

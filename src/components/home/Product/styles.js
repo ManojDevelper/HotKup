@@ -29,7 +29,7 @@ export const ProductMain = styled.div`
   }
   @media (max-width: 750px) {
     h1 {
-      font-size: 4.5vw;
+      font-size: 5.8vw;
       line-height: 5.6vw;
     }
     .dashboard_img {
@@ -37,9 +37,9 @@ export const ProductMain = styled.div`
       margin: 7vw 0 6vw 0;
     }
     p {
-      width: 72.5vw;
-      font-size: 2.9vw;
-      line-height: 5vw;
+      width: 87.5vw;
+      font-size: 3.5vw;
+      line-height: 6vw;
     }
   }
 `

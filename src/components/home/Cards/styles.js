@@ -85,7 +85,7 @@ export const CardsMain = styled.div`
     }
     .cards_title {
       h1 {
-        font-size: 4.5vw;
+        font-size: 5.8vw;
         line-height: 5.6vw;
       }
       p {
@@ -103,32 +103,35 @@ export const CardsMain = styled.div`
         .card_text {
           margin: 0;
           h2 {
-            font-size: 4.1vw;
+            font-size: 5.6vw;
             line-height: 5vw;
             text-align: center;
             width: fit-content;
             margin: auto;
             img {
-              width: 27.2vw;
-              margin: 0;
+              width: 39.2vw;
+              margin: 1vw 0 0 0;
             }
           }
           p {
-            font-size: 2.9vw;
-            line-height: 4.5vw;
-            margin: 5vw 0 10vw 0;
+            font-size: 3.5vw;
+            line-height: 4.9vw;
+            margin: 4vw 0 10vw 0;
             text-align: center;
             width: 75.2vw;
           }
         }
         img {
-          max-width: 57vw;
+          max-width: 67vw;
         }
 
         :nth-child(2n) {
           flex-direction: column-reverse;
           .card_text {
             margin: 0;
+          }
+          img {
+            max-width: 67vw;
           }
         }
       }

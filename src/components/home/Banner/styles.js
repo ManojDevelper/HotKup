@@ -108,33 +108,34 @@ export const BannerMain = styled.div`
 
   @media (max-width: 750px) {
     height: 78.75vw;
+    margin: 14vw 0 0 0;
     .banner_rotate {
       display: none;
     }
     .banner_text {
       h2 {
         width: 71.8vw;
-        font-size: 5vw;
+        font-size: 5.5vw;
         line-height: 7.2vw;
         .crone {
           width: 4vw;
           height: 4vw;
-          top: -1.3vw;
-          left: 1vw;
+          top: -1.8vw;
+          left: -2vw;
         }
         .roundoff {
-          width: 26.5vw;
-          right: 3vw;
+          width: 27vw;
+          right: 1vw;
           top: 6.9vw;
         }
       }
       p {
-        width: 78.1vw;
-        font-size: 2.8vw;
-        line-height: 3.5vw;
+        width: 92.1vw;
+        font-size: 3.5vw;
+        line-height: 5.5vw;
         margin: 4.3vw 0 6vw 0;
         .cup {
-          width: 4vw;
+          width: 5vw;
           right: 4vw;
         }
         ::after {
