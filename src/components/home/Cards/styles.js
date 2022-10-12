@@ -98,7 +98,7 @@ export const CardsMain = styled.div`
 
     .card_container {
       .card {
-        margin-top: 15vw;
+        margin-top: 29vw;
         flex-direction: column-reverse;
         .card_text {
           margin: 0;
