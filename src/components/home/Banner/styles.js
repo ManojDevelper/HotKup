@@ -177,6 +177,10 @@ export const BannerMain = styled.div`
         width: 55vw;
         height: 31vw;
         border-radius: 20px;
+        @media (max-width: 750px) {
+          width: 89vw;
+          height: 60vw;
+        }
       }
       .close {
         position: absolute;
