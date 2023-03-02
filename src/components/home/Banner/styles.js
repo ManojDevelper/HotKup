@@ -160,4 +160,30 @@ export const BannerMain = styled.div`
       }
     }
   }
+
+  .popup_modal {
+    position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: #000000c7;
+      z-index: 20;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .pop_modal_div {
+      #popvideo {
+        width: 55vw;
+        height: 31vw;
+        border-radius: 20px;
+      }
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+      }
+      }
+  }
 `
