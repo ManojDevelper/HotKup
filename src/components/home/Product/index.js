@@ -8,9 +8,7 @@ const Product = () => {
       <h1>One solution to replace them all</h1>
       <img src={p2_dashboard_img} alt="ProductMain" className="dashboard_img" />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
-        molestie vivamus rhoncus, nulla. Morbi scelerisque pharetra, feugiat
-        augue dolor ac quisque pulvinar bibendum.
+        Unlock process management effortlessly with HotKup. Our user-friendly software is designed for business users, allowing you to begin with simple task management and gradually explore advanced features. Streamline workflows, optimize productivity, and adapt processes to your needs. Experience HotKup and revolutionize your business.
       </p>
     </ProductMain>
   )
