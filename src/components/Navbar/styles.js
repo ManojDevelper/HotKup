@@ -5,6 +5,10 @@ export const NavbarMain = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background: white;
   .logo {
     width: 165px;
   }
@@ -55,7 +59,7 @@ export const NavbarMain = styled.div`
   }
 
   @media (max-width: 933px) {
-    padding: 28px 49px;
+    padding: 5px 49px;
     .nav_options {
       display: none;
     }

@@ -1,12 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import p1_crone from "../../../data/assets/banner/p1_crone.png"
 import p1_cup from "../../../data/assets/banner/p1_cup.png"
 import p1_roundoff from "../../../data/assets/banner/p1_roundoff.png"
 import p1_underline from "../../../data/assets/banner/p1_underline.png"
 import p1_play from "../../../data/assets/banner/p1_play.png"
 import { BannerMain } from "./styles"
+import { CloseOutlined } from '@ant-design/icons';
+
 
 const Banner = () => {
+  const [open, setOpen] = useState(false);
   return (
     <BannerMain>
       <div className="banner_rotate"></div>
@@ -24,12 +27,22 @@ const Banner = () => {
           <img src={p1_cup} alt="p1_cup" className="cup" />
         </p>
         <button>Try it out</button>
-        <span className="watch_btn">
+        <span className="watch_btn" onClick={() => setOpen(true)} >
           <img src={p1_play} alt="cup" className="play_icon" />
           Watch why HotKup
           <img src={p1_underline} alt="p1_underline" className="underLine" />
         </span>
       </div>
+      {open &&
+        <div className="popup_modal">
+          <div className="pop_modal_div">
+            <CloseOutlined style={{ fontSize: '16px', color: '#fff' }} className="close" onClick={() => setOpen(false)} />
+            <iframe
+              src="https://www.youtube.com/embed/TrujMjFW3NQ?autoplay=1&mute=0" id="popvideo" title="videopopup">
+            </iframe>
+          </div>
+        </div>
+      }
     </BannerMain>
   )
 }

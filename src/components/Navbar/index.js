@@ -32,14 +32,14 @@ const Navabar = () => {
           className="nav_link"
           activeClassName="nav_active"
         >
-          Pricing
+          About
         </Link>
         <Link
           to="/Home/#tour"
           className="nav_link"
           activeClassName="nav_active"
         >
-          Tour Hotkup
+          Features
         </Link>
         <Link className="nav_link" onClick={() => setContact(true)}>
           Contact Us
@@ -63,7 +63,7 @@ const Navabar = () => {
             activeClassName="nav_active"
             onClick={() => setOpen(false)}
           >
-            Pricing
+            About
           </Link>
           <Link
             to="/Home/#tour"
@@ -71,7 +71,7 @@ const Navabar = () => {
             activeClassName="nav_active"
             onClick={() => setOpen(false)}
           >
-            Tour Hotkup
+            Features
           </Link>
           <Link
             className="nav_link"

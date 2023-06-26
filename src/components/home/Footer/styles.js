@@ -104,8 +104,8 @@ export const FooterMain = styled.div`
     }
     .footer_main {
       h1 {
-        font-size: 5vw;
-        line-height: 6vw;
+        font-size: 5.8vw;
+        line-height: 8vw;
         width: 76.4vw;
       }
       button {
