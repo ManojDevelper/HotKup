@@ -12,7 +12,7 @@ const Review = () => {
       <div className="review_title">
         <h1>
           People really <img src={fly_heart} alt="fly_heart" />
-          love HOTKUP
+          love HotKup
         </h1>
         <p>
           Thousands of people have already made the switch from other work
@@ -33,7 +33,7 @@ const Review = () => {
           </p>
           <div className="customer">
             <img src={p4_c1} alt="p4_c1" />
-            <span>Rosy Williams</span>
+            <span>Rosy</span>
           </div>
         </div>
         <div className="review_card">
@@ -47,7 +47,7 @@ const Review = () => {
           </p>
           <div className="customer">
             <img src={p4_c2} alt="p4_c1" />
-            <span>Dan Mall</span>
+            <span>Dan</span>
           </div>
         </div>
         <div className="review_card">
@@ -60,18 +60,18 @@ const Review = () => {
           </p>
           <div className="customer">
             <img src={p4_c3} alt="p4_c1" />
-            <span>Dan Mall</span>
+            <span>Janet Ward</span>
           </div>
         </div>
         <div className="review_card">
           <p>
-            Just got a demo of Hotkup with the team.{" "}
+            Just got a demo of HotKup with the team.{" "}
             <span>❤️ the level of product thinking</span> that’s gone into
             rebuilding work management from scratch.
           </p>
           <div className="customer">
             <img src={p4_c4} alt="p4_c1" />
-            <span>Rosy Williams</span>
+            <span>Nathan</span>
           </div>
         </div>
       </div>
