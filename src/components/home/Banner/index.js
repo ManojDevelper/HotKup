@@ -26,10 +26,10 @@ const Banner = () => {
           <span>hot cup</span> of morning coffee
           <img src={p1_cup} alt="p1_cup" className="cup" />
         </p>
-        <button>Join Today - It’s Free</button>
+        <button>Try it out</button>
         <span className="watch_btn" onClick={() => setOpen(true)} >
           <img src={p1_play} alt="cup" className="play_icon" />
-          Watch Demo
+          Watch why HotKup
           <img src={p1_underline} alt="p1_underline" className="underLine" />
         </span>
       </div>

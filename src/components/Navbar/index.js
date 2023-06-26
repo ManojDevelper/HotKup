@@ -2,13 +2,15 @@ import React, { useState } from "react"
 import logo from "../../data/assets/banner/logo.svg"
 import hamburger from "../../data/assets/banner/hamburger.svg"
 import { NavbarMain } from "./styles"
-import { Link } from "gatsby"
-import { CloseOutlined } from "@ant-design/icons"
+// import { Link } from "gatsby"
+// import { CloseOutlined } from "@ant-design/icons"
 import { Modal } from "antd"
 import Contact from "../Contact"
 
 const Navabar = () => {
-  const [open, setOpen] = useState(false)
+  const [
+    // _open,
+     setOpen] = useState(false)
   const [contact, setContact] = useState(false)
   return (
     <NavbarMain>
@@ -20,7 +22,7 @@ const Navabar = () => {
         role="presentation"
         onClick={() => setOpen(true)}
       />
-      <div className="nav_options">
+      {/* <div className="nav_options">
         <CloseOutlined className="closeIcon" onClick={() => setOpen(false)} />
         <Link to="/Home/" className="nav_link" activeClassName="nav_active">
           Home
@@ -83,7 +85,7 @@ const Navabar = () => {
           </Link>
           <Link className="nav_link nav_links">Sign In</Link>
         </div>
-      )}
+      )} */}
       <Modal
         centered
         visible={contact}
