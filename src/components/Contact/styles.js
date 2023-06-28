@@ -89,8 +89,8 @@ export const ContactSection = styled.div`
   }
   .contact_info_top {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 4.60431654676259vw;
+    grid-template-columns: auto;
+    gap: 4vw;
   }
   .contact_info_top:nth-child(2) {
     margin-top: 3vw;
@@ -310,4 +310,49 @@ export const ContactSection = styled.div`
       padding: 2vw;
     }
   }
+`
+export const SuccessModal = styled.div`
+background: white;
+width: 821px;
+align-items: center;
+display: flex;
+flex-direction: column;
+margin: 10% auto auto auto;
+border-radius: 16px;
+padding: 40px 0;
+img {
+  width: 78px;
+  height: 78px;
+}
+h1 {
+  color: #212121;
+font-size: 36px;
+font-weight: 700;
+line-height: 81px;
+letter-spacing: 0em;
+text-align: center;
+}
+p{
+  font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: 0.01em;
+text-align: center;
+}
+button {
+  width: 189px;
+height: 64px;
+padding: 8px 12px 8px 16px;
+border-radius: 8px;
+border: 1px solid #A9B7D4;
+font-size: 20px;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: 0.01em;
+text-align: center;
+background: transparent;
+margin-top: 37px;
+cursor: pointer;
+}
 `

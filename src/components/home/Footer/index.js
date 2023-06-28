@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import footer_curl from "../../../data/assets/banner/footer_curl.svg"
 // import linkdin from "../../../data/assets/banner/linkdin.svg"
 // import facebook from "../../../data/assets/banner/facebook.svg"
@@ -8,8 +8,10 @@ import footer_curl from "../../../data/assets/banner/footer_curl.svg"
 import logo from "../../../data/assets/banner/logo.svg"
 import { FooterMain } from "./styles"
 // import { Link } from "gatsby"
+import ContactModal from "../../modals/contact";
 
 const Footer = () => {
+  const [open, setOpen] = useState(false);
   return (
     <FooterMain>
       <div className="footer_main">
@@ -17,7 +19,7 @@ const Footer = () => {
           Never forget an important detail again. Get started with{" "}
           <span>HotKup</span> today
         </h1>
-        <button>Try it out</button>
+        <button onClick={() => setOpen(true)} role="presentation">Try it out</button>
       </div>
       <img src={footer_curl} alt="footer_curl" className="footer_curl" />
       <div className="footer_container2">
@@ -57,6 +59,7 @@ const Footer = () => {
         HotKup Incorporated, Waterdown, Ontario Canada
         Copyright © 2022 HotKup Inc. All rights reserved.
       </p>
+      <ContactModal open={open} setOpen={setOpen}/>
     </FooterMain>
   )
 }

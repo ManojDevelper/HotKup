@@ -4,14 +4,14 @@ import hamburger from "../../data/assets/banner/hamburger.svg"
 import { NavbarMain } from "./styles"
 // import { Link } from "gatsby"
 // import { CloseOutlined } from "@ant-design/icons"
-import { Modal } from "antd"
-import Contact from "../Contact"
+// import { Modal } from "antd"
+// import Contact from "../Contact"
 
 const Navabar = () => {
   const [
     // _open,
      setOpen] = useState(false)
-  const [contact, setContact] = useState(false)
+  // const [contact, setContact] = useState(false)
   return (
     <NavbarMain>
       <img src={logo} alt="logo" className="logo" />
@@ -86,26 +86,6 @@ const Navabar = () => {
           <Link className="nav_link nav_links">Sign In</Link>
         </div>
       )} */}
-      <Modal
-        centered
-        visible={contact}
-        width={1000}
-        footer={null}
-        okButtonProps={{ style: { display: "none" } }}
-        cancelButtonProps={{ style: { display: "none" } }}
-        onCancel={() => setContact(false)}
-        bodyStyle={{ backgroundColor: `white`, height: `100%`, padding: `0` }}
-        style={{ backgroundColor: `white`, height: `100%`, padding: `0` }}
-        maskStyle={{
-          backgroundColor: `white`,
-          height: `fit-content`,
-          padding: `0`,
-        }}
-      >
-        <div id="navcont">
-          <Contact />
-        </div>
-      </Modal>
     </NavbarMain>
   )
 }

@@ -5,26 +5,24 @@ import { ContactSection } from "./styles"
 import { message } from "antd"
 import { SmileOutlined } from "@ant-design/icons"
 
-const Contact = () => {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [phone, setPhone] = useState("")
-  const [organization, setOrganization] = useState("")
-  const [description, setDescription] = useState("")
+const Contact = ({setSuccessModal, setOpenLoader}) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [description, setDescription] = useState("");
 
-  const success = () => {
-    message.success({
-      content:
-        "Hello there! Thank you for reaching out. We will get back to you as quick as humanly possible.",
-      className: "messageCont",
-      icon: <SmileOutlined />,
-      style: {
-        display: "flex",
-        justifyContent: `center`,
-        alignItems: `center`,
-      },
-    })
-  }
+  // const success = () => {
+  //   message.success({
+  //     content:
+  //       "Hello there! Thank you for reaching out. We will get back to you as quick as humanly possible.",
+  //     className: "messageCont",
+  //     icon: <SmileOutlined />,
+  //     style: {
+  //       display: "flex",
+  //       justifyContent: `center`,
+  //       alignItems: `center`,
+  //     },
+  //   })
+  // }
 
   const warning = () => {
     message.warning({ content: "All fields need to be filled" })
@@ -46,32 +44,23 @@ const Contact = () => {
   }
 
   function signUpp() {
-    setErrors(validation())
-    warning()
+    setErrors(validation());
+    warning();
   }
 
   const onFinish = async values => {
+    setOpenLoader(true);
     const data = new FormData()
     data.append("name", name)
     data.append("email", email)
-    if (phone === undefined) {
-      data.append("phone", "-")
-    } else {
-      data.append("phone", phone)
-    }
-    if (organization === undefined) {
-      data.append("organization", "-")
-    } else {
-      data.append("organization", organization)
-    }
     if (description === undefined) {
-      data.append("Description", "-")
+      data.append("description", "-")
     } else {
-      data.append("Description", description)
+      data.append("description", description)
     }
 
     var url =
-      "https://script.google.com/macros/s/AKfycby6DXXQypCUffF3AwK4ClaGflKHhJlgCFMPbt5qbs5wLk75IpVvwV-BEp1ntgd8zVQa/exec"
+      "https://script.google.com/macros/s/AKfycbyPOosLjKztSiddYNqrfeiDGZ36IxFEPBCNTor5akYFckok3pf3rgwMOD2neJw4cXk2yw/exec"
 
     await fetch(url, {
       method: "POST",
@@ -79,21 +68,21 @@ const Contact = () => {
       mode: "no-cors",
     })
       .then(function (response) {
-        success()
-        setName("")
-        setPhone("")
-        setEmail("")
-        setOrganization("")
-        setDescription("")
-        setErrors(true)
+        setOpenLoader(false);
+        setSuccessModal(true);
+        setName("");
+        setEmail("");
+        setDescription("");
+        setErrors(true);
       })
       .catch(function (err) {
-        setErrors(true)
+        setOpenLoader(false);
+        setErrors(true);
         message.error({
           content: err.message,
           className: "messageCont",
           icon: <SmileOutlined rotate={180} />,
-        })
+        });
       })
   }
 
@@ -157,33 +146,6 @@ const Contact = () => {
                   placeholder="chrisdo@abc.com"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className="contact_info_top">
-              <div className="contact_name" style={{ position: `relative` }}>
-                <span>Contact Number (optional)</span>
-                <input
-                  type="mail"
-                  placeholder="+91  9876543210"
-                  value={phone}
-                  onChange={e => setPhone(parseInt(e.target.value) || "")}
-                  maxLength={12}
-                  minLength={10}
-                  onKeyPress={event => {
-                    if (!/[0-9]/.test(event.key)) {
-                      event.preventDefault()
-                    }
-                  }}
-                />
-              </div>
-              <div className="contact_name" style={{ position: `relative` }}>
-                <span>Your organization name (optional)</span>
-                <input
-                  type="text"
-                  placeholder="ABC inc."
-                  value={organization}
-                  onChange={e => setOrganization(e.target.value)}
                 />
               </div>
             </div>

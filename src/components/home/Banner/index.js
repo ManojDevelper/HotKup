@@ -6,10 +6,12 @@ import p1_underline from "../../../data/assets/banner/p1_underline.png"
 import p1_play from "../../../data/assets/banner/p1_play.png"
 import { BannerMain } from "./styles"
 import { CloseOutlined } from '@ant-design/icons';
+import ContactModal from '../../modals/contact';
 
 
 const Banner = () => {
   const [open, setOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   return (
     <BannerMain>
       <div className="banner_rotate"></div>
@@ -26,8 +28,8 @@ const Banner = () => {
           <span>hot cup</span> of morning coffee
           <img src={p1_cup} alt="p1_cup" className="cup" />
         </p>
-        <button>Try it out</button>
-        <span className="watch_btn" onClick={() => setOpen(true)} >
+        <button onClick={() => setContactOpen(true)}>Try it out</button>
+        <span className="watch_btn" onClick={() => setOpen(true)} role='presentation'>
           <img src={p1_play} alt="cup" className="play_icon" />
           Watch why HotKup
           <img src={p1_underline} alt="p1_underline" className="underLine" />
@@ -43,6 +45,10 @@ const Banner = () => {
           </div>
         </div>
       }
+      <ContactModal
+        open={contactOpen}
+        setOpen={setContactOpen}
+      />
     </BannerMain>
   )
 }
