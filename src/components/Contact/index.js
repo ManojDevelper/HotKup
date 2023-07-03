@@ -60,7 +60,7 @@ const Contact = ({setSuccessModal, setOpenLoader}) => {
     }
 
     var url =
-      "https://script.google.com/macros/s/AKfycbyPOosLjKztSiddYNqrfeiDGZ36IxFEPBCNTor5akYFckok3pf3rgwMOD2neJw4cXk2yw/exec"
+      "https://script.google.com/macros/s/AKfycbxbLKwYKwImHS42ePOCM2JdnX9V1AkBYzjgr8ylz-PMd9QjR8vFHA2oNqsh40AEbRr_/exec"
 
     await fetch(url, {
       method: "POST",

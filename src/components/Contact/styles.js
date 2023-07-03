@@ -312,47 +312,64 @@ export const ContactSection = styled.div`
   }
 `
 export const SuccessModal = styled.div`
-background: white;
-width: 821px;
-align-items: center;
-display: flex;
-flex-direction: column;
-margin: 10% auto auto auto;
-border-radius: 16px;
-padding: 40px 0;
-img {
-  width: 78px;
-  height: 78px;
-}
-h1 {
-  color: #212121;
-font-size: 36px;
-font-weight: 700;
-line-height: 81px;
-letter-spacing: 0em;
-text-align: center;
-}
-p{
-  font-family: Inter;
-font-size: 20px;
-font-weight: 500;
-line-height: 40px;
-letter-spacing: 0.01em;
-text-align: center;
-}
-button {
-  width: 189px;
-height: 64px;
-padding: 8px 12px 8px 16px;
-border-radius: 8px;
-border: 1px solid #A9B7D4;
-font-size: 20px;
-font-weight: 500;
-line-height: 40px;
-letter-spacing: 0.01em;
-text-align: center;
-background: transparent;
-margin-top: 37px;
-cursor: pointer;
-}
+  background: white;
+  width: 821px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto auto auto;
+  border-radius: 16px;
+  padding: 40px 0;
+  @media (max-width: 750px) {
+    width: auto;
+    margin: 3%;
+  }
+  img {
+    width: 78px;
+    height: 78px;
+  }
+  h1 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 81px;
+    letter-spacing: 0em;
+    text-align: center;
+    @media (max-width: 750px) {
+      font-size: 6vw;
+      line-height: auto;
+    }
+  }
+  p {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    @media (max-width: 750px) {
+      font-size: 5vw;
+    }
+  }
+  button {
+    width: 189px;
+    height: 64px;
+    padding: 8px 12px 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #a9b7d4;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    background: transparent;
+    margin-top: 37px;
+    cursor: pointer;
+    @media (max-width: 750px) {
+      width: 117px;
+      height: 57px;
+      padding: auto;
+      font-size: 15px;
+    }
+  }
 `
